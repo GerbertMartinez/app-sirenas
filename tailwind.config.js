@@ -1,0 +1,131 @@
+/** @type {import('tailwindcss').Config} */
+
+const colors = {
+  obsidian: '#08100C',
+  charcoal: '#282828',
+  steel: '#374151',
+  borgray: '#4B5563',
+  silver: '#9CA3AF',
+  light: '#FFFFFF',
+  dark: '#000000',
+  rmuni: {
+    10: '#F47A86',
+    20: '#F4727E',
+    30: '#F46A76',
+    40: '#F4626E',
+    50: '#F45B67',
+    60: '#F4535F',
+    70: '#F54B57',
+    80: '#F5434F',
+    90: '#F53B47',
+    100: '#F5333F'
+  },
+  nmuni: {
+    10: '#FCDDB9',
+    20: '#FCD5A4',
+    30: '#FCD5A4',
+    40: '#FDCC90',
+    50: '#FDBB67',
+    60: '#FEB352',
+    70: '#FEAA3E',
+    80: '#FEA229',
+    90: '#FF9915',
+    100: '#FF9100'
+  },
+  amuni: {
+    10: '#FFF1C5',
+    20: '#FFEDAF',
+    30: '#FFE999',
+    40: '#FFE583',
+    50: '#FFE16D',
+    60: '#FFDE58',
+    70: '#FFDA42',
+    80: '#FFD62C',
+    90: '#FFD216',
+    100: '#FFCE00'
+  },
+  vcmuni: {
+    10: '#CBF25F',
+    20: '#C5EF54',
+    30: '#BFEC4A',
+    40: '#BAE93F',
+    50: '#B4E635',
+    60: '#AEE32A',
+    70: '#A8E020',
+    80: '#A3DD15',
+    90: '#9DDA0B',
+    100: '#97D700'
+  },
+  vomuni: {
+    10: '#6FE2B0',
+    20: '#63DEA9',
+    30: '#56DAA2',
+    40: '#4AD59B',
+    50: '#3ED194',
+    60: '#31CD8D',
+    70: '#25C986',
+    80: '#19C47F',
+    90: '#0CC077',
+    100: '#00BC70'
+  },
+  acmuni: {
+    10: '#B7EBF7',
+    20: '#ACE7F5',
+    30: '#A1E3F4',
+    40: '#96DFF2',
+    50: '#8BDBF0',
+    60: '#80D8EE',
+    70: '#75D4ED',
+    80: '#6AD0EB',
+    90: '#5FCCE9',
+    100: '#54C8E8'
+  },
+  aomuni: {
+    10: '#92B9FF',
+    20: '#84A4F5',
+    30: '#7790EB',
+    40: '#697BE1',
+    50: '#5B67D7',
+    60: '#4E52CD',
+    70: '#403EC3',
+    80: '#3229B9',
+    90: '#2515AF',
+    100: '#1700A5'
+  }
+};
+
+module.exports = {
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}"
+  ],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors,
+      fontFamily: {
+        'montserrat-black': ['Montserrat-Black','sans-serif'],
+        'montserrat-black-italic': ['Montserrat-BlackItalic','sans-serif'],
+        'montserrat-bold': ['Montserrat-Bold','sans-serif'],
+        'montserrat-bold-italic': ['Montserrat-BoldItalic','sans-serif'],
+        'montserrat-extra-bold': ['Montserrat-ExtraBold','sans-serif'],
+        'montserrat-extra-bold-italic': ['Montserrat-ExtraBoldItalic','sans-serif'],
+        'montserrat-extra-light': ['Montserrat-ExtraLight','sans-serif'],
+        'montserrat-extra-light-italic': ['Montserrat-ExtraLightItalic','sans-serif'],
+        'montserrat-italic': ['Montserrat-Italic','sans-serif'],
+        'montserrat-light': ['Montserrat-Light','sans-serif'],
+        'montserrat-light-italic': ['Montserrat-LightItalic','sans-serif'],
+        'montserrat-medium': ['Montserrat-Medium','sans-serif'],
+        'montserrat-mediumItalic': ['Montserrat-MediumItalic','sans-serif'],
+        'montserrat-regular': ['Montserrat-Regular','sans-serif'],
+        'montserrat-semi-bold': ['Montserrat-SemiBold','sans-serif'],
+        'montserrat-semi-bold-italic': ['Montserrat-SemiBoldItalic','sans-serif'],
+        'montserrat-thin': ['Montserrat-Thin','sans-serif'],
+        'montserrat-thin-italic': ['Montserrat-ThinItalic','sans-serif'],
+      }
+    },
+  },
+  plugins: [],
+}
+
+module.exports.colors = colors;

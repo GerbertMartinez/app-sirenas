@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "894523885408",
+    "project_id": "sirenas-ave",
+    "storage_bucket": "sirenas-ave.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894523885408:android:8abd94f0e4f09b5c378005",
+        "android_client_info": {
+          "package_name": "com.gmartinezroldan.avesirenasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC67WI-tPGP-h7z3t8yPw3Jg_Mso9YKVtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
