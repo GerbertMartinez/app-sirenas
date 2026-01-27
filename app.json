@@ -35,6 +35,7 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "./plugins/withAlarmSound.js",
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
       "expo-router",
