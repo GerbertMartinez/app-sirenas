@@ -1,5 +1,6 @@
 import { registerForPushNotifications } from '@/helpers/notifications';
 import { useFonts } from 'expo-font';
+import * as Notifications from 'expo-notifications';
 import { Slot, SplashScreen } from 'expo-router';
 import { useEffect } from 'react';
 import "./global.css";
@@ -34,6 +35,24 @@ const RootLayout = () => {
 
     useEffect(() => {
         registerForPushNotifications();
+    },[]);
+
+    useEffect(() => {
+
+        const subscription = Notifications.addNotificationReceivedListener(notification => {
+            Notifications.scheduleNotificationAsync({
+                content: {
+                    title: notification.request.content.title,
+                    body: notification.request.content.body,
+                    priority: Notifications.AndroidNotificationPriority.MAX,
+                    data: notification.request.content.data
+                },
+                trigger: null
+            });
+        });
+
+        return () => subscription.remove();
+
     },[]);
 
     return (
